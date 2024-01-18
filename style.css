@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url(site-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.infoblock {
+    height: 90%;
+    width: 35%;
+    background: rgba(149, 170, 29, 0.0);
+    overflow-y: scroll;
+    border: 5px solid white;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.infoblock::-webkit-scrollbar {
+    width: 15px;
+    border-radius: 15px;
+  }
+  
+  .infoblock::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.698);
+  }
+  
+  .infoblock::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  
+  .infoblock::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.8);
+  }
+
+.block-con {
+    width: 95%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: black;
+    margin-top: 5px;
+    margin-left: 2.5%;
+}
+
+.pic {
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+}
+
+.title {
+    width: 80%;
+    height: 100%;
+    font-size: 20px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+button {
+    margin-top: 3%;
+    width: 30%;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.0);
+    backdrop-filter: blur(0px);
+    border: 5px solid white;
+    font-size: 28px;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+button:hover {
+    box-shadow: 5px -5px 5px 5px black;
+    backdrop-filter: blur(10px);
+}
